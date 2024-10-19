@@ -5,6 +5,7 @@ db.createCollection("nations")
 db.createCollection("associations")
 db.createCollection("universes")
 
+//Inserting the Solar System
 db.universes.insertOne(
 
     { 
