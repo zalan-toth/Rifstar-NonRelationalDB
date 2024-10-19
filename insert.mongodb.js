@@ -47,6 +47,36 @@ db.universes.insertOne(
                             interestPoints: null,
                             orbitingCelestials: [
                                 {
+                                    _id: String("celestial-x44-milkyway-solar-mercury"),
+                                    name: String("Mercury"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('6324'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('1242.23453'),
+                                    sol: NumberDecimal('200.32'),
+                                    hoursPerSol: NumberDecimal('10.7'),
+                                    mass: NumberInt('242')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-venus"),
+                                    name: String("Venus"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('3525'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('2000.23453'),
+                                    sol: NumberDecimal('280.32'),
+                                    hoursPerSol: NumberDecimal('16.7'),
+                                    mass: NumberInt('400')
+                                },
+                                {
                                     _id: String("celestial-x44-milkyway-solar-earth"),
                                     name: String("Earth"),
                                     coordinate: {
@@ -205,9 +235,121 @@ db.universes.insertOne(
                                                     description: String("Deck of the ISS"),
                                                 }
                                             ]
+                                        },
+                                        {
+                                            id: String("celestial-x44-milkyway-solar-moon"),
+                                            name: String("Moon"),
+                                            type: String("moon"),
+                                            coordinate: {
+                                                x: NumberLong('0'),
+                                                y: NumberLong('0'),
+                                                z: NumberLong('0')
+                                            },
+                                            diameter: NumberInt('2301'),
+                                            type: String("planet"),
+                                            orbitDistance: NumberDecimal('213.325632245'),
+                                            sol: NumberDecimal('23.26'),
+                                            hoursPerSol: NumberDecimal('53623'),
+                                            mass: NumberInt('2156'),
+                                            interestPoints: [
+                                                {
+                                                    id: String("interestpoint-x44-milkyway-solar-moon-unbase"),
+                                                    name: "Universal Moon Base",
+                                                    type: "military-structure",
+                                                    category: NumberInt('136'),
+                                                    languages: [
+                                                        String("English")
+                                                    ],
+                                                    description: String("Moon base"),
+                                                }
+                                            ],
+                                            orbitingCelestials: [
+                                                {
+                                                    id: String("celestial-x44-milkyway-solar-moonlandsat"),
+                                                    name: String("Moon Landsat"),
+                                                    type: String("satellite"),
+                                                    orbitDistance: NumberDecimal('58.3521667'),
+                                                    description: String("Provides detailed imagery for scientific research")
+                                                }
+                                            ]
                                         }
                                     ]
 
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-mars"),
+                                    name: String("Mars"),
+                                    coordinate: {
+                                        x: NumberLong('531235135'),
+                                        y: NumberLong('52374737'),
+                                        z: NumberLong('23435325')
+                                    },
+                                    diameter: NumberInt('2145'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('6000.23453'),
+                                    sol: NumberDecimal('400.32'),
+                                    hoursPerSol: NumberDecimal('37.7'),
+                                    mass: NumberInt('400')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-jupiter"),
+                                    name: String("Jupiter"),
+                                    coordinate: {
+                                        x: NumberLong('6426246246'),
+                                        y: NumberLong('3243525'),
+                                        z: NumberLong('62346236236')
+                                    },
+                                    diameter: NumberInt('421412'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('6000.23453'),
+                                    sol: NumberDecimal('500.32'),
+                                    hoursPerSol: NumberDecimal('66.7'),
+                                    mass: NumberInt('4020')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-uranus"),
+                                    name: String("Uranus"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('4123523'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('6000.23453'),
+                                    sol: NumberDecimal('520.32'),
+                                    hoursPerSol: NumberDecimal('68.7'),
+                                    mass: NumberInt('42145')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-neptun"),
+                                    name: String("Neptun"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('2145'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('6000.23453'),
+                                    sol: NumberDecimal('1000.32'),
+                                    hoursPerSol: NumberDecimal('387.7'),
+                                    mass: NumberInt('2154512')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-saturn"),
+                                    name: String("Saturn"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('2145'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('6000.23453'),
+                                    sol: NumberDecimal('1120.78'),
+                                    hoursPerSol: NumberDecimal('500.7'),
+                                    mass: NumberInt('54125')
                                 }
                             ]
 
