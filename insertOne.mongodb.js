@@ -1,9 +1,5 @@
 use ("rifstar");
 
-db.createCollection("currencies")
-db.createCollection("nations")
-db.createCollection("associations")
-db.createCollection("universes")
 
 //Inserting the Solar System
 db.universes.insertOne(
@@ -12,7 +8,7 @@ db.universes.insertOne(
         _id: String("universe-x44"), 
         name: String("x44"), 
         creationTime: NumberDecimal('0'), 
-        creationEarthTime: Date("0000-01-01T00:00:00Z"),
+        creationEarthTime: ISODate("2024-12-01T00:00:00Z"),
         galaxies: [
             {
                 _id: String("galaxy-x44-milkyway"), 
@@ -354,6 +350,65 @@ db.universes.insertOne(
                                 }
                             ]
 
+                        }
+                    },
+                    {
+                        _id: String("solarsystem-x44-milkyway-trappist"),
+                        name: String("Trappist System"),
+                        coordinate: {
+                            x: NumberLong('0'),
+                            y: NumberLong('0'),
+                            z: NumberLong('0')
+                        },
+                        centralCelestial: {
+                            _id: String("celestial-x44-milkyway-trappist-selen"),
+                            name: String("Selen"),
+                            coordinate: {
+                                x: NumberLong('0'),
+                                y: NumberLong('0'),
+                                z: NumberLong('0')
+                            },
+                            diameter: NumberInt('54115135'),
+                            type: String("star"),
+                            orbitDistance: NumberDecimal('23123.325632245'),
+                            sol: NumberDecimal('212423'),
+                            hoursPerSol: NumberDecimal('232134'),
+                            mass: NumberInt('23154151'),
+                            interestPoints: null,
+                            orbitingCelestials: [
+                                {
+                                    _id: String("celestial-x44-milkyway-trappist-aetheria"),
+                                    name: String("Aetheria"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('2424'),
+                                    type: String("planet"),
+                                    orbitDistance: NumberDecimal('2345.325632245'),
+                                    sol: NumberDecimal('620'),
+                                    hoursPerSol: NumberDecimal('61'),
+                                    mass: NumberInt('3432'),
+                                    interestPoints: [
+                                        {
+                                            _id: String("interestpoint-x44-milkyway-trappist-aetheria-onyx"),
+                                            name: String("OnYx"),
+                                            type: String("city"),
+                                            category: NumberInt('86'),
+                                            languages: [
+                                                String("Huweq")
+                                            ],
+                                            description: String("City on Aetheria"),
+                                            coordinate: {
+                                                x: NumberLong('0'),
+                                                y: NumberLong('0'),
+                                                z: NumberLong('0')
+                                            }
+                                        },
+                                    ],
+                                }
+                            ]
                         }
                     }
                 ]
