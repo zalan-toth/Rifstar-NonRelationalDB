@@ -8,49 +8,49 @@ db.currencies.insertMany(
             name: String("Universal Currency"),
             sign: String("$"),
             code: String("UC"),
-            value: NumberDecimal('1')
+            value: Decimal128('1')
         },
         {
             _id: String("currency-fc"),
             name: String("Federal Currency"),
             sign: String("₤"),
             code: String("FC"),
-            value: NumberDecimal('4987.5672')
+            value: Decimal128('4987.5672')
         },
         {
             _id: String("currency-as"),
             name: String("Allied Shilling"),
             sign: String("₴"),
             code: String("AS"),
-            value: NumberDecimal('7897.8971')
+            value: Decimal128('7897.8971')
         },
         {
             _id: String("currency-ca"),
             name: String("Castar"),
             sign: String("₡"),
             code: String("CA"),
-            value: NumberDecimal('456.4452')
+            value: Decimal128('456.4452')
         },
         {
             _id: String("currency-ba"),
             name: String("Baw"),
             sign: String("฿"),
             code: String("BA"),
-            value: NumberDecimal('285.1112')
+            value: Decimal128('285.1112')
         },
         {
             _id: String("currency-fl"),
             name: String("Florin"),
             sign: String("ƒ"),
             code: String("FL"),
-            value: NumberDecimal('155.3549')
+            value: Decimal128('155.3549')
         },
         {
             _id: String("currency-te"),
             name: String("Teper"),
             sign: String("₮"),
             code: String("TE"),
-            value: NumberDecimal('6653.1776')
+            value: Decimal128('6653.1776')
         }
     ]
 )
