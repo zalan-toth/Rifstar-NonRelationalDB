@@ -45,3 +45,24 @@ db.currencies.find(
         sign: 0, _id: 0, code: 0
     }
 ).sort( {value: 1} ).pretty()
+
+
+//Find all currencies except UC FC AS, show only name sign and id in result
+db.currencies.find(
+    {
+        code: { $nin: ["UC","FC","AS"] }
+    },
+    {
+        sign: 1, name: 1
+    }
+).pretty()
+
+//using or to find republics that are English speaking
+db.nations.find(
+    {
+        $and: [
+            { type: "Republic" },
+            { languages: { $in: ["English"] } }
+        ]
+    }
+).pretty()
