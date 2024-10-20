@@ -147,7 +147,7 @@ db.universes.updateOne(
     },
     {
       arrayFilters: [
-        { "galaxy._id": "galaxy-x44-sombrero" },
+        { "galaxy._id": "galaxy-x44-andromeda" },
         { "solarsystem._id": "solarsystem-x44-andromeda-kepler" }
       ]
     }
@@ -178,7 +178,43 @@ db.universes.updateOne(
                     _id: String("celestial-x44-sombrero-lyra-flora"),
                     name: String("Flora"),
                     type: String("planet"),
-                    orbitingCelestials: []
+                    orbitingCelestials: [
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-vexa"),
+                            name: String("Vexa Imager"),
+                            type: String("satellite")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-fps"),
+                            name: String("Flora Positioning System"),
+                            type: String("satellite")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-rss"),
+                            name: String("Research Space Station"),
+                            type: String("station")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-ryn"),
+                            name: String("Ryn"),
+                            type: String("moon")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-ava"),
+                            name: String("Ava"),
+                            type: String("moon")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-ora"),
+                            name: String("Ora"),
+                            type: String("moon")
+                        },
+                        {
+                            _id: String("celestial-x44-sombrero-lyra-kry"),
+                            name: String("Kry"),
+                            type: String("moon")
+                        }
+                    ]
                 },
                 {
                     _id: String("celestial-x44-sombrero-lyra-atom"),
