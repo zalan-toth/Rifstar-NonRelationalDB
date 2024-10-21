@@ -283,3 +283,26 @@ db.universes.updateOne(
       ]
     }
 )
+
+
+db.nations.updateOne(
+  {
+    _id: "nation-human"
+  },
+  {
+    $set: { "markedLocations.$[location].description": "Banking Capital" }
+  },
+  {
+    arrayFilters: [ { "location.interestPoint": "interestpoint-x44-milkyway-solar-earth-zürich" } ]
+  }
+)
+
+//Fixating the the values over 600 to 600
+db.currencies.updateMany(
+  {
+    value: { $gt: 600 }
+  },
+  {
+    $set: { "value": Decimal128('600') }
+  }
+)
