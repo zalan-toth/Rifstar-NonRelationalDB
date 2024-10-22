@@ -7,7 +7,7 @@ db.universes.insertOne(
     { 
         _id: String("universe-x44"), 
         name: String("x44"), 
-        creationTime: NumberDecimal('0'), 
+        creationTime: Decimal128('0'), 
         creationEarthTime: ISODate("2024-12-01T00:00:00Z"),
         galaxies: [
             {
@@ -35,12 +35,10 @@ db.universes.insertOne(
                                 y: NumberLong('0'),
                                 z: NumberLong('0')
                             },
-                            diameter: NumberInt('635312245'),
+                            diameter: NumberInt('1391400'),
                             type: String("star"),
-                            orbitDistance: NumberDecimal('2521.325632245'),
-                            sol: NumberDecimal('765476'),
-                            hoursPerSol: NumberDecimal('655'),
-                            mass: NumberInt('8765462136563'),
+                            orbitDistance: Decimal128('-27000'),
+                            mass: Decimal128('1.989E30'),
                             interestPoints: null,
                             orbitingCelestials: [
                                 {
@@ -51,12 +49,12 @@ db.universes.insertOne(
                                         y: NumberLong('0'),
                                         z: NumberLong('0')
                                     },
-                                    diameter: NumberInt('6324'),
+                                    diameter: NumberInt('4880'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('1242.23453'),
-                                    sol: NumberDecimal('200.32'),
-                                    hoursPerSol: NumberDecimal('10.7'),
-                                    mass: NumberInt('242')
+                                    orbitDistance: Decimal128('57.9E6'),
+                                    sol: Decimal128('87.97'),
+                                    hoursPerSol: Decimal128('1407.5'),
+                                    mass: Decimal128('3.285E23')
                                 },
                                 {
                                     _id: String("celestial-x44-milkyway-solar-venus"),
@@ -66,12 +64,12 @@ db.universes.insertOne(
                                         y: NumberLong('0'),
                                         z: NumberLong('0')
                                     },
-                                    diameter: NumberInt('3525'),
+                                    diameter: NumberInt('12104'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('2000.23453'),
-                                    sol: NumberDecimal('280.32'),
-                                    hoursPerSol: NumberDecimal('16.7'),
-                                    mass: NumberInt('400')
+                                    orbitDistance: Decimal128('108.2E6'),
+                                    sol: Decimal128('224.7'),
+                                    hoursPerSol: Decimal128('5832.5'),
+                                    mass: Decimal128('4.867E24')
                                 },
                                 {
                                     _id: String("celestial-x44-milkyway-solar-earth"),
@@ -83,10 +81,10 @@ db.universes.insertOne(
                                     },
                                     diameter: NumberInt('12742'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('2521.325632245'),
-                                    sol: NumberDecimal('365.26'),
-                                    hoursPerSol: NumberDecimal('5973600'),
-                                    mass: NumberInt('754'),
+                                    orbitDistance: Decimal128('149.6E6'),
+                                    sol: Decimal128('365.26'),
+                                    hoursPerSol: Decimal128('24'),
+                                    mass: Decimal128('5.972E24'),
                                     interestPoints: [
                                         {
                                             _id: String("interestpoint-x44-milkyway-solar-earth-tokyo"),
@@ -214,7 +212,7 @@ db.universes.insertOne(
                                             id: String("celestial-x44-milkyway-solar-intelsat1"),
                                             name: String("Intelsat 1"),
                                             type: String("satellite"),
-                                            orbitDistance: NumberDecimal('54.335632344')
+                                            orbitDistance: Decimal128('54.335632344')
                                         },
                                         {
                                             id: String("celestial-x44-milkyway-solar-internationalspacestation"),
@@ -244,10 +242,10 @@ db.universes.insertOne(
                                             },
                                             diameter: NumberInt('2301'),
                                             type: String("planet"),
-                                            orbitDistance: NumberDecimal('213.325632245'),
-                                            sol: NumberDecimal('23.26'),
-                                            hoursPerSol: NumberDecimal('53623'),
-                                            mass: NumberInt('2156'),
+                                            orbitDistance: Decimal128('213.325632245'),
+                                            sol: Decimal128('23.26'),
+                                            hoursPerSol: Decimal128('53623'),
+                                            mass: Decimal128('2156'),
                                             interestPoints: [
                                                 {
                                                     id: String("interestpoint-x44-milkyway-solar-moon-unbase"),
@@ -265,7 +263,7 @@ db.universes.insertOne(
                                                     id: String("celestial-x44-milkyway-solar-moonlandsat"),
                                                     name: String("Moon Landsat"),
                                                     type: String("satellite"),
-                                                    orbitDistance: NumberDecimal('58.3521667'),
+                                                    orbitDistance: Decimal128('58.3521667'),
                                                     description: String("Provides detailed imagery for scientific research")
                                                 }
                                             ]
@@ -281,12 +279,12 @@ db.universes.insertOne(
                                         y: NumberLong('52374737'),
                                         z: NumberLong('23435325')
                                     },
-                                    diameter: NumberInt('2145'),
+                                    diameter: NumberInt('6779'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('6000.23453'),
-                                    sol: NumberDecimal('400.32'),
-                                    hoursPerSol: NumberDecimal('37.7'),
-                                    mass: NumberInt('400')
+                                    orbitDistance: Decimal128('227.9E6'),
+                                    sol: Decimal128('687'),
+                                    hoursPerSol: Decimal128('24.6'),
+                                    mass: Decimal128('6.39E23')
                                 },
                                 {
                                     _id: String("celestial-x44-milkyway-solar-jupiter"),
@@ -296,42 +294,12 @@ db.universes.insertOne(
                                         y: NumberLong('3243525'),
                                         z: NumberLong('62346236236')
                                     },
-                                    diameter: NumberInt('421412'),
+                                    diameter: NumberInt('139820'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('6000.23453'),
-                                    sol: NumberDecimal('500.32'),
-                                    hoursPerSol: NumberDecimal('66.7'),
-                                    mass: NumberInt('4020')
-                                },
-                                {
-                                    _id: String("celestial-x44-milkyway-solar-uranus"),
-                                    name: String("Uranus"),
-                                    coordinate: {
-                                        x: NumberLong('0'),
-                                        y: NumberLong('0'),
-                                        z: NumberLong('0')
-                                    },
-                                    diameter: NumberInt('4123523'),
-                                    type: String("planet"),
-                                    orbitDistance: NumberDecimal('6000.23453'),
-                                    sol: NumberDecimal('520.32'),
-                                    hoursPerSol: NumberDecimal('68.7'),
-                                    mass: NumberInt('42145')
-                                },
-                                {
-                                    _id: String("celestial-x44-milkyway-solar-neptun"),
-                                    name: String("Neptun"),
-                                    coordinate: {
-                                        x: NumberLong('0'),
-                                        y: NumberLong('0'),
-                                        z: NumberLong('0')
-                                    },
-                                    diameter: NumberInt('2145'),
-                                    type: String("planet"),
-                                    orbitDistance: NumberDecimal('6000.23453'),
-                                    sol: NumberDecimal('1000.32'),
-                                    hoursPerSol: NumberDecimal('387.7'),
-                                    mass: NumberInt('2154512')
+                                    orbitDistance: Decimal128('778.5E6'),
+                                    sol: Decimal128('4333'),
+                                    hoursPerSol: Decimal128('9.93'),
+                                    mass: Decimal128('1.898E27')
                                 },
                                 {
                                     _id: String("celestial-x44-milkyway-solar-saturn"),
@@ -341,12 +309,42 @@ db.universes.insertOne(
                                         y: NumberLong('0'),
                                         z: NumberLong('0')
                                     },
-                                    diameter: NumberInt('2145'),
+                                    diameter: NumberInt('116460'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('6000.23453'),
-                                    sol: NumberDecimal('1120.78'),
-                                    hoursPerSol: NumberDecimal('500.7'),
-                                    mass: NumberInt('54125')
+                                    orbitDistance: Decimal128('1.434E9'),
+                                    sol: Decimal128('10759'),
+                                    hoursPerSol: Decimal128('10.7'),
+                                    mass: Decimal128('5.683E26')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-uranus"),
+                                    name: String("Uranus"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('50724'),
+                                    type: String("planet"),
+                                    orbitDistance: Decimal128('2.871E9'),
+                                    sol: Decimal128('30687'),
+                                    hoursPerSol: Decimal128('17.2'),
+                                    mass: Decimal128('8.681E25')
+                                },
+                                {
+                                    _id: String("celestial-x44-milkyway-solar-neptune"),
+                                    name: String("Neptune"),
+                                    coordinate: {
+                                        x: NumberLong('0'),
+                                        y: NumberLong('0'),
+                                        z: NumberLong('0')
+                                    },
+                                    diameter: NumberInt('49244'),
+                                    type: String("planet"),
+                                    orbitDistance: Decimal128('4.495E9'),
+                                    sol: Decimal128('60190'),
+                                    hoursPerSol: Decimal128('16.1'),
+                                    mass: Decimal128('1.024E26')
                                 }
                             ]
 
@@ -368,12 +366,7 @@ db.universes.insertOne(
                                 y: NumberLong('0'),
                                 z: NumberLong('0')
                             },
-                            diameter: NumberInt('54115135'),
                             type: String("star"),
-                            orbitDistance: NumberDecimal('23123.325632245'),
-                            sol: NumberDecimal('212423'),
-                            hoursPerSol: NumberDecimal('232134'),
-                            mass: NumberInt('23154151'),
                             interestPoints: null,
                             orbitingCelestials: [
                                 {
@@ -384,12 +377,12 @@ db.universes.insertOne(
                                         y: NumberLong('0'),
                                         z: NumberLong('0')
                                     },
-                                    diameter: NumberInt('2424'),
+                                    diameter: NumberInt('7792'),
                                     type: String("planet"),
-                                    orbitDistance: NumberDecimal('2345.325632245'),
-                                    sol: NumberDecimal('620'),
-                                    hoursPerSol: NumberDecimal('61'),
-                                    mass: NumberInt('3432'),
+                                    orbitDistance: Decimal128('199.6E6'),
+                                    sol: Decimal128('482'),
+                                    hoursPerSol: Decimal128('44'),
+                                    mass: Decimal128('82.45E6'),
                                     interestPoints: [
                                         {
                                             _id: String("interestpoint-x44-milkyway-trappist-aetheria-onyx"),
