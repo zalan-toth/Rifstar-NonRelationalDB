@@ -1,5 +1,6 @@
 use ("rifstar");
 
+//get the exchange rates for currencies compared to the universal currency
 db.currencies.aggregate([
     {
         $match: {
