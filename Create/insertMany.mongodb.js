@@ -93,7 +93,8 @@ db.nations.insertMany(
             category: String("Humanoid"),
             type: String("Protectorate"),
             languages: [
-                String("Huweq")
+                String("Huweq"),
+                String("Qar")
             ],
             capital: String("interestpoint-x44-milkyway-trappist-aetheria-onyx"),
             claimedTerritories: [
