@@ -42,6 +42,9 @@ db.universes.aggregate([
             planetName: 1,
             orbitDistance: 1
         }
-    }
+    }/*,
+    { 
+        $out: "planetsOfTheSolarSystem"
+    }*/
 ])
 
