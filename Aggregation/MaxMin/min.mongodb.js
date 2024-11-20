@@ -14,15 +14,16 @@ db.universes.aggregate([
     },
     { 
         $project: {
+            planet: "$galaxies.solarSystems.centralCelestial.orbitingCelestials._id",
             diameter: "$galaxies.solarSystems.centralCelestial.orbitingCelestials.diameter"
         }
     },
     {
         $group: {
             _id: null,
-            maxDiameter: { $min: "$diameter" }
+            minDiameter: { $min: "$diameter" }
         }
-    },
+    }, //we loose data about the correspongind planet this way. :-(
     { 
         $project: {
             _id: 0
