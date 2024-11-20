@@ -1,7 +1,7 @@
 use ("rifstar");
 
 
-//finding the biggest planet based on diameter
+//finding the star based on diameter
 db.universes.aggregate([
     { 
         $unwind: "$galaxies"
