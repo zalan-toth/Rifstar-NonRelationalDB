@@ -1,7 +1,7 @@
 use ("rifstar");
 
 
-//finding the smallest planet based on diameter
+//finding the 3 furthest planets from the Sun in the SolarSystem
 db.universes.aggregate([
     { 
         $unwind: "$galaxies"
@@ -10,34 +10,35 @@ db.universes.aggregate([
         $unwind: "$galaxies.solarSystems"
     },
     { 
-        $unwind: "$galaxies.solarSystems.centralCelestial.orbitingCelestials"
+        $match: {
+            
+            "galaxies.solarSystems.centralCelestial.name": { $eq: "Sun" }
+        }
     },
     { 
-        $match: {
-            "galaxies.solarSystems.centralCelestial.orbitingCelestials.diameter": { $ne: null }
-        }
+        $unwind: "$galaxies.solarSystems.centralCelestial.orbitingCelestials"
     },
     { 
         $project: {
             planet: "$galaxies.solarSystems.centralCelestial.orbitingCelestials._id",
             planetName: "$galaxies.solarSystems.centralCelestial.orbitingCelestials.name",
-            diameter: "$galaxies.solarSystems.centralCelestial.orbitingCelestials.diameter"
+            orbitDistance: "$galaxies.solarSystems.centralCelestial.orbitingCelestials.orbitDistance"
         }
     },
     {
         $sort: {
-            diameter: 1 //ascending order, so smallest will be first
+            orbitDistance: -1 //descending order
         }
     },
     { 
-        $limit: 1 //get the smallest
-    }, //we don't loose data about the corresponding planet this way. :-)
+        $limit: 3 //get the furthests
+    },
     { 
         $project: {
             _id: 0,
             planet: 1,
             planetName: 1,
-            diameter: 1
+            orbitDistance: 1
         }
     }
 ])
