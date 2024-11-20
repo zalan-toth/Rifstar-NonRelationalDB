@@ -115,6 +115,7 @@ db.universes.updateOne(
         "galaxies.$[galaxy].solarSystems.$[solarsystem].centralCelestial": {
             _id: String("celestial-x44-andromeda-kepler-kepler"),
             name: String("Kepler"),
+            diameter: NumberInt('10986600'),
             type: String("star"),
             orbitingCelestials: [
                 {
