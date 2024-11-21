@@ -19,7 +19,8 @@ db.celestials.aggregate([
           minHoursPerSol: {$min: "$hoursPerSol"},
           maxMass: {$max: "$mass"},
           avgMass: {$avg: "$mass"},
-          minMass: {$min: "$mass"}
+          minMass: {$min: "$mass"},
+          totalMass: {$sum: "$mass"}
         }
     },
     { //rounding results to 6 digits
@@ -38,7 +39,8 @@ db.celestials.aggregate([
             minHoursPerSol: { $round: ["$minHoursPerSol", 6] },
             maxMass: { $round: ["$maxMass", 6] },
             avgMass: { $round: ["$avgMass", 6] },
-            minMass: { $round: ["$minMass", 6] }
+            minMass: { $round: ["$minMass", 6] },
+            totalMass: { $round: ["$totalMass", 6] }
         }
     }
 ])
