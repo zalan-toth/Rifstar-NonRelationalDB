@@ -2,9 +2,16 @@ use ("rifstar");
 
 db.currencies.aggregate([
     {
+      $match: {
+        code: { $ne: "UC"}
+      }
+    },
+    {
         $lookup: {
             from: "currencies",
-            pipeline: [],
+            pipeline: [
+                { $match: { code: { $ne: "UC" } } }
+            ],
             as: "exchange"
         }
     },
@@ -13,16 +20,23 @@ db.currencies.aggregate([
     },
     {
       $match: {
-        $expr: { $ne: ["$_id", "$exchange._id"] } //same currency exception
+        $expr: { $ne: ["$code", "$exchange.code"] } //same currency exception
       }
     },
     {
         $project: {
+            _id: { $concat: ["$code", "-", "$exchange.code"] },
             from: "$code",
             to: "$exchange.code",
             exchangeRate: {
                 $divide: ["$exchange.value", "$value"]
             }
         }
+    }/*,
+    {
+        $count: "rates"
+    }*/,
+    { 
+        $out: "exchangeRates"
     }
 ])
