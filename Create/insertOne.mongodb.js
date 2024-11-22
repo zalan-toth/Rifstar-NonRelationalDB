@@ -49,12 +49,12 @@ db.universes.insertOne(
                                         y: NumberLong('0'),
                                         z: NumberLong('0')
                                     },
-                                    diameter: NumberInt('4880'),
+                                    diameter: NumberInt('4880'), //km
                                     type: String("planet"),
-                                    orbitDistance: Decimal128('57.9E6'),
+                                    orbitDistance: Decimal128('57.9E6'), // positive - km , negative - lightyear
                                     sol: Decimal128('87.97'),
                                     hoursPerSol: Decimal128('1407.5'),
-                                    mass: Decimal128('3.285E23')
+                                    mass: Decimal128('3.285E23') //kg
                                 },
                                 {
                                     _id: String("celestial-x44-milkyway-solar-venus"),
