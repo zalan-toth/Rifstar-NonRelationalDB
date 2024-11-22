@@ -103,6 +103,53 @@ db.nations.insertMany(
             currency: String("currency-fc"),
             description: String("Home of the huweq"),
             markedLocations: null
+        },
+        {
+            _id: String("nation-hunor"),
+            name: String("Hunor Republic"),
+            category: String("Humanoid"),
+            type: String("Republic"),
+            languages: [
+                String("Rovas")
+            ],
+            claimedTerritories: [
+                String("solarsystem-x44-sombrero-lyra")
+            ],
+            currency: String("currency-fl"),
+            description: String("Home of the Hunor"),
+            markedLocations: null
+        },
+        {
+            _id: String("nation-nihon"),
+            name: String("Nihon People's Republic"),
+            category: String("Humanoid"),
+            type: String("Republic"),
+            languages: [
+                String("Nihonjin")
+            ],
+            capital: String("interestpoint-x57-zenith-vorath-umbra-nexus"),
+            claimedTerritories: [
+                String("solarsystem-x57-zenith-vorath")
+            ],
+            currency: String("currency-as"),
+            description: String("Home of the Nihon people"),
+            markedLocations: null
+        },
+        {
+            _id: String("nation-auron"),
+            name: String("Empire of Auron"),
+            category: String("Variable"),
+            type: String("Empire"),
+            languages: [
+                String("Ran"),
+                String("Jiir")
+            ],
+            claimedTerritories: [
+                String("galaxy-x57-auron")
+            ],
+            currency: String("currency-te"),
+            description: String("Home of the entities of the Auron galaxy"),
+            markedLocations: null
         }
     ]
 )
@@ -135,6 +182,26 @@ db.associations.insertMany(
                     description: String("Experimental Location")
                 }
             ]
+        },
+        {
+            _id: String("association-eca"),
+            name: String("Economic Cooperation Axis"),
+            category: String("Mixed"),
+            type: String("Economic Area"),
+            languages: [
+                String("Ran"),
+                String("Jiir"),
+                String("Hunor"),
+                String("Nihonjin")
+            ],
+            capital: String("interestpoint-x57-zenith-vorath-umbra-nexus"),
+            nations: [
+                String("nation-hunor"),
+                String("nation-nihon"),
+                String("nation-auron")
+            ],
+            currency: String("currency-te"),
+            description: String("An economic alliance between various nations")
         }
     ]
 )
