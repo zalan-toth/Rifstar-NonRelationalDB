@@ -4,7 +4,7 @@ use ("rifstar");
 db.celestials.aggregate([
     {
         $project: {  //calculate if it was a perfect sphere
-            volume: {
+            volume: { //km^3
                 $multiply: [
                     (4 / 3),
                     3.1415926535897,
@@ -16,16 +16,19 @@ db.celestials.aggregate([
                     }
                 ]
             },
-            surface: {
+            surface: { //km^2
                 $multiply: [
                     4,
                     {
-                        $pow: [ "$diameter", 2 ]//négyzetre-squared
+                        $pow: [
+                            { $divide: ["$diameter", 2] },
+                            2 //négyzetre-squared
+                        ]
                     },
                     3.1415926535897
                 ]
             },
-            density: {
+            density: { //kg/m^3
                 $divide: [
                     {
                     $divide: [
