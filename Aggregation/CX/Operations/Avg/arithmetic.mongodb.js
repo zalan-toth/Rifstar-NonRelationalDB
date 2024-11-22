@@ -28,14 +28,25 @@ db.currencies.aggregate([
             _id: { $concat: ["$code", "-", "$exchange.code"] },
             from: "$code",
             to: "$exchange.code",
-            exchangeRate: {
+            fromValue: "$value",
+            toValue: "$exchange.value",
+            midExchangeRate: {
                 $divide: ["$exchange.value", "$value"]
+            },
+            sellExchangeRate: {
+                $multiply: [
+                    { $divide: ["$exchange.value", "$value"] },
+                    0.97
+                ]
+            },
+            buyExchangeRate: { 
+                $multiply: [
+                    { $divide: ["$exchange.value", "$value"] },
+                    1.03
+                ]
             }
         }
-    }/*,
-    {
-        $count: "rates"
-    }*/,
+    },
     { 
         $out: "exchangeRates"
     }
