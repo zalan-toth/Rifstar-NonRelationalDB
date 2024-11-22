@@ -47,7 +47,7 @@ db.celestials.aggregate([
                         }
                     ]
                     },
-                    1000000000 //to get kg/m^3
+                    1000000000 //to get kg/m^3 instead of kg/km^3
                 ]
             }
         }
