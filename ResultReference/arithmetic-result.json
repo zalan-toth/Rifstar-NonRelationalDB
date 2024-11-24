@@ -1,0 +1,402 @@
+[
+    {
+      "_id": "FC-AS",
+      "from": "FC",
+      "to": "AS",
+      "fromValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "toValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "1.583516929857105484212824240242818"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "1.536011421961392319686439513035533"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "1.631022437752818648739208967450103"
+      }
+    },
+    {
+      "_id": "FC-CA",
+      "from": "FC",
+      "to": "CA",
+      "fromValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "toValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.09151660152067725523577907882624619"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.08877110347505693757870570646145880"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.09426209956629757289285245119103358"
+      }
+    },
+    {
+      "_id": "FC-BA",
+      "from": "FC",
+      "to": "BA",
+      "fromValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "toValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.05716438266736536401955646833189536"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.05544945118734440309896977428193850"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.05887931414738632494014316238185222"
+      }
+    },
+    {
+      "_id": "FC-FL",
+      "from": "FC",
+      "to": "FL",
+      "fromValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "toValue": {
+        "$numberDecimal": "155.3549"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.03114843244618338174972359269665580"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.03021397947279788029723188491575613"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.03208288541956888320221530047755547"
+      }
+    },
+    {
+      "_id": "FC-TE",
+      "from": "FC",
+      "to": "TE",
+      "fromValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "toValue": {
+        "$numberDecimal": "6653.1776"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "1.333952472860917041879656278114909"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "1.293933898675089530623266589771462"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "1.373971047046744553136045966458356"
+      }
+    },
+    {
+      "_id": "AS-FC",
+      "from": "AS",
+      "to": "FC",
+      "fromValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "toValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.6315057206810152034014218797558150"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.6125605490605847472993792233631406"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.6504508923014456595034645361484894"
+      }
+    },
+    {
+      "_id": "AS-CA",
+      "from": "AS",
+      "to": "CA",
+      "fromValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "toValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.05779325739759258195450533281827640"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.05605945967566480449587017283372811"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.05952705511952035941314049280282469"
+      }
+    },
+    {
+      "_id": "AS-BA",
+      "from": "AS",
+      "to": "BA",
+      "fromValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "toValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.03609963467363989839776464041295246"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.03501664563343070144583170120056389"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.03718262371384909534969757962534103"
+      }
+    },
+    {
+      "_id": "AS-FL",
+      "from": "AS",
+      "to": "FL",
+      "fromValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "toValue": {
+        "$numberDecimal": "155.3549"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.01967041328001095380186708180839682"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.01908030088161062518781106935414492"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.02026052567841128241592309426264872"
+      }
+    },
+    {
+      "_id": "AS-TE",
+      "from": "AS",
+      "to": "TE",
+      "fromValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "toValue": {
+        "$numberDecimal": "6653.1776"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.8423986177282557910256896104660568"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.8171266591964081172949189221520751"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.8676705762601034647564602987800385"
+      }
+    },
+    {
+      "_id": "CA-FC",
+      "from": "CA",
+      "to": "FC",
+      "fromValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "toValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "10.92697918611040273837910881744402"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "10.59916981052709065622773555292070"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "11.25478856169371482053048208196734"
+      }
+    },
+    {
+      "_id": "CA-AS",
+      "from": "CA",
+      "to": "AS",
+      "fromValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "toValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "17.30305653340203818552588569230216"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "16.78396483739997703996010912153310"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "17.82214822940409933109166226307122"
+      }
+    },
+    {
+      "_id": "CA-BA",
+      "from": "CA",
+      "to": "BA",
+      "fromValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "toValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.6246340195931515984832352273613569"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.6058949990053570505287381705405162"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.6433730401809461464377322841821976"
+      }
+    },
+    {
+      "_id": "CA-FL",
+      "from": "CA",
+      "to": "FL",
+      "fromValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "toValue": {
+        "$numberDecimal": "155.3549"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.3403582730194117497565972870346758"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.3301475248288293972638993684236355"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.3505690212099941022492952056457161"
+      }
+    },
+    {
+      "_id": "CA-TE",
+      "from": "CA",
+      "to": "TE",
+      "fromValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "toValue": {
+        "$numberDecimal": "6653.1776"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "14.57607090621174239536312354692305"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "14.13878877902539012350222984051536"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "15.01335303339809466722401725333074"
+      }
+    },
+    {
+      "_id": "BA-FC",
+      "from": "BA",
+      "to": "FC",
+      "fromValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "toValue": {
+        "$numberDecimal": "4987.5672"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "17.49341029044106299577147442822309"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "16.96860798172783110589833019537640"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "18.01821259915429488564461866106978"
+      }
+    },
+    {
+      "_id": "BA-AS",
+      "from": "BA",
+      "to": "AS",
+      "fromValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "toValue": {
+        "$numberDecimal": "7897.8971"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "27.70111135584992802808167479916608"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "26.87007801517443018723922455519110"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "28.53214469652542586892412504314106"
+      }
+    },
+    {
+      "_id": "BA-CA",
+      "from": "BA",
+      "to": "CA",
+      "fromValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "toValue": {
+        "$numberDecimal": "456.4452"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "1.600937458788009730940068296159534"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "1.552909335024369439011866247274748"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "1.648965582551650022868270345044320"
+      }
+    },
+    {
+      "_id": "BA-FL",
+      "from": "BA",
+      "to": "FL",
+      "fromValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "toValue": {
+        "$numberDecimal": "155.3549"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "0.5448923086851726624559119389206738"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "0.5285455394246174825822345807530536"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "0.5612390779457278423295892970882940"
+      }
+    },
+    {
+      "_id": "BA-TE",
+      "from": "BA",
+      "to": "TE",
+      "fromValue": {
+        "$numberDecimal": "285.1112"
+      },
+      "toValue": {
+        "$numberDecimal": "6653.1776"
+      },
+      "midExchangeRate": {
+        "$numberDecimal": "23.33537791570446899315074258745360"
+      },
+      "sellExchangeRate": {
+        "$numberDecimal": "22.63531657823333492335622030982999"
+      },
+      "buyExchangeRate": {
+        "$numberDecimal": "24.03543925317560306294526486507721"
+      }
+    }
+  ]
