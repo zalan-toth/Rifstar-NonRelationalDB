@@ -209,13 +209,13 @@ db.universes.insertOne(
                                     ],
                                     orbitingCelestials: [
                                         {
-                                            id: String("celestial-x44-milkyway-solar-intelsat1"),
+                                            _id: String("celestial-x44-milkyway-solar-intelsat1"),
                                             name: String("Intelsat 1"),
                                             type: String("satellite"),
                                             orbitDistance: Decimal128('54.335632344')
                                         },
                                         {
-                                            id: String("celestial-x44-milkyway-solar-internationalspacestation"),
+                                            _id: String("celestial-x44-milkyway-solar-internationalspacestation"),
                                             name: String("International Space Station"),
                                             type: String("station"),
                                             interestPoints: [
@@ -232,7 +232,7 @@ db.universes.insertOne(
                                             ]
                                         },
                                         {
-                                            id: String("celestial-x44-milkyway-solar-moon"),
+                                            _id: String("celestial-x44-milkyway-solar-moon"),
                                             name: String("Moon"),
                                             type: String("moon"),
                                             coordinate: {
