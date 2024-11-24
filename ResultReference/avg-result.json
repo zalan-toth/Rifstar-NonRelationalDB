@@ -1,0 +1,125 @@
+[
+    {
+      "_id": "moon",
+      "maxDiameter": 4223,
+      "avgDiameter": 2234.714286,
+      "minDiameter": 803,
+      "maxOrbitDistance": {
+        "$numberDecimal": "3669120.000000"
+      },
+      "avgOrbitDistance": {
+        "$numberDecimal": "957224.575090"
+      },
+      "minOrbitDistance": {
+        "$numberDecimal": "213.325632"
+      },
+      "maxSols": {
+        "$numberDecimal": "321.000000"
+      },
+      "avgSols": {
+        "$numberDecimal": "107.452000"
+      },
+      "minSols": {
+        "$numberDecimal": "10.000000"
+      },
+      "maxHoursPerSol": {
+        "$numberDecimal": "53623.000000"
+      },
+      "avgHoursPerSol": {
+        "$numberDecimal": "10795.844000"
+      },
+      "minHoursPerSol": {
+        "$numberDecimal": "2.990000"
+      },
+      "maxMass": {
+        "$numberDecimal": "110000000000000000000000.000000"
+      },
+      "avgMass": {
+        "$numberDecimal": "26142857143472381428879.428571"
+      },
+      "minMass": {
+        "$numberDecimal": "2156.000000"
+      },
+      "totalMass": {
+        "$numberDecimal": "183000000004306670002156.000000"
+      }
+    },
+    {
+      "_id": "planet",
+      "maxDiameter": 139820,
+      "avgDiameter": 28477.407407,
+      "minDiameter": 3340,
+      "maxOrbitDistance": {
+        "$numberDecimal": "89900000000000.000000"
+      },
+      "avgOrbitDistance": {
+        "$numberDecimal": "5097287585185.185185"
+      },
+      "minOrbitDistance": {
+        "$numberDecimal": "57900000.000000"
+      },
+      "maxSols": {
+        "$numberDecimal": "60190.000000"
+      },
+      "avgSols": {
+        "$numberDecimal": "4486.337037"
+      },
+      "minSols": {
+        "$numberDecimal": "34.600000"
+      },
+      "maxHoursPerSol": {
+        "$numberDecimal": "7764.500000"
+      },
+      "avgHoursPerSol": {
+        "$numberDecimal": "642.462222"
+      },
+      "minHoursPerSol": {
+        "$numberDecimal": "1.200000"
+      },
+      "maxMass": {
+        "$numberDecimal": "1898000000000000000000000000.000000"
+      },
+      "avgMass": {
+        "$numberDecimal": "99408645074074074077127777.777778"
+      },
+      "minMass": {
+        "$numberDecimal": "82450000.000000"
+      },
+      "totalMass": {
+        "$numberDecimal": "2684033417000000000082450000.000000"
+      }
+    },
+    {
+      "_id": "star",
+      "maxDiameter": 99112345,
+      "avgDiameter": 19466092.142857,
+      "minDiameter": 1289000,
+      "maxOrbitDistance": {
+        "$numberDecimal": "-25000.000000"
+      },
+      "avgOrbitDistance": {
+        "$numberDecimal": "-29500.000000"
+      },
+      "minOrbitDistance": {
+        "$numberDecimal": "-34000.000000"
+      },
+      "maxSols": null,
+      "avgSols": null,
+      "minSols": null,
+      "maxHoursPerSol": null,
+      "avgHoursPerSol": null,
+      "minHoursPerSol": null,
+      "maxMass": {
+        "$numberDecimal": "2500000000000000000000000000000.000"
+      },
+      "avgMass": {
+        "$numberDecimal": "2122250000000000000000000000000.000"
+      },
+      "minMass": {
+        "$numberDecimal": "1800000000000000000000000000000.000"
+      },
+      "totalMass": {
+        "$numberDecimal": "8489000000000000000000000000000.000"
+      }
+    }
+  ]
