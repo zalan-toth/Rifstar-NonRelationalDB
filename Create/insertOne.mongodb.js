@@ -220,7 +220,7 @@ db.universes.insertOne(
                                             type: String("station"),
                                             interestPoints: [
                                                 {
-                                                    id: String("interestpoint-x44-milkyway-solar-internationalspacestation-deck"),
+                                                    _id: String("interestpoint-x44-milkyway-solar-internationalspacestation-deck"),
                                                     name: "International Space Station Deck",
                                                     type: "deck",
                                                     category: NumberInt('14'),
@@ -247,7 +247,7 @@ db.universes.insertOne(
                                             mass: Decimal128('2156'),
                                             interestPoints: [
                                                 {
-                                                    id: String("interestpoint-x44-milkyway-solar-moon-unbase"),
+                                                    _id: String("interestpoint-x44-milkyway-solar-moon-unbase"),
                                                     name: "Universal Moon Base",
                                                     type: "military-structure",
                                                     category: NumberInt('136'),
@@ -259,7 +259,7 @@ db.universes.insertOne(
                                             ],
                                             orbitingCelestials: [
                                                 {
-                                                    id: String("celestial-x44-milkyway-solar-moonlandsat"),
+                                                    _id: String("celestial-x44-milkyway-solar-moonlandsat"),
                                                     name: String("Moon Landsat"),
                                                     type: String("satellite"),
                                                     orbitDistance: Decimal128('58.3521667'),
