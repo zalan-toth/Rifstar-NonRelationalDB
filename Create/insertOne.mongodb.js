@@ -241,7 +241,6 @@ db.universes.insertOne(
                                                 z: NumberLong('0')
                                             },
                                             diameter: NumberInt('2301'),
-                                            type: String("planet"),
                                             orbitDistance: Decimal128('213.325632245'),
                                             sol: Decimal128('23.26'),
                                             hoursPerSol: Decimal128('53623'),
