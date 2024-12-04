@@ -8,4 +8,5 @@ The implementation includes CRUD (Create, Read, Update, Delete) operations as we
 
 ## Diagram
 
-![image](https://github.com/user-attachments/assets/172b4c87-afb8-42dd-b989-fa6e066093e3)
+![CA - Page 1](https://github.com/user-attachments/assets/5eb0a828-a0b1-4504-bbec-d1bf9dcad95e)
+
